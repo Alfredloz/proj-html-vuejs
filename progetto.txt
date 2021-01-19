@@ -1,0 +1,39 @@
+Creazione progetto individuale con boolean!
+richieste che del progetto:
+1) aggiungere header e footer con Vuejs creando una struttura dati che consenta di inserire i link nelle nnavbar. Su questo non ci sono API da interrogarem ma create i dati a mano nel vostro js.
+
+2) riprodurre layout dello screeshot in versione desktop ====> finito il progetto si può aggiungere il responsive.
+
+# scadenza!!!!
+Giovedì 21 ore 17.00
+
+# NOTA BENE
+Non ci saranno i ticket ma finestre individuali di 10 minuti al giorno. Massimo uno slot a giorno fino a giovedì. PUSHARE 15 minuti prima del colloquio!!!
+
+#Presentazione progetto
+Venerdì 22 ci sarà un 1to1 con l'insegnante per la spiegazione del progetto. Prenotare uno slot per parlare con con il teacher. NON FEEDBACK!!!!!
+####################################################
+domande per fabio martedì mattina:
+1) i dot nelle carda devono funzionare, se si devo implementare altre sezioni guardando dal sito o me le devo fare da solo?
+riposte: posso inserirlo come 'bonus' senza creare nessuna cartella bonus (bonus)
+2) fare embed del video youtube
+3) al click del bottone del footer posso dirgli di andaer al div X con un ID 
+4) alla mail già inserita inserire un messagio di errore (bonus)
+5) bottoni nel banner del footer solo solo dimostrativi, magari do un effetto hoover per farli vedere
+####################################################
+NOTE:
+-Per quanto riguard il "bonus", per il sito ho pensato di usare esclusivamente flexbox o magari cercare qualche framework per aiutarmi nella creazione della parte Responsive. 
+
+-ci sono degli effetti hover da tenere in considerazione in tutta la pagina.
+
+# header
+la navabr orizzontale presenta da sinistra a destra: logo menù al centro e settings di lingua e searchbar. Sembrano divisi grazie a 'flexbox'.
+nel banner c'è un bottone che drovrà andare in hover. ci sono delle immagini che possiamo implementare grazie ad un array di dati e ed inserirli con vue js
+# MAIN
+ci sono degli screenshot che evidenziano gli effetti hove rsu alcune card e anche sui bottoni.
+# FOOTER
+c'è un bottone nel footer in basso a sinistra che indica una freccia in su, credo che si debba cliccare e portare l\utente all\inizio della pagina!
+
+
+# SVOLGIMENTO PROGETTO
+1) creo una struttura html di base per darmi un'idea di come impostare il progetto e successivamente creare un'istanza vue dove poter inserire tutti i miei dati.
