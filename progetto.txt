@@ -1,4 +1,5 @@
 Creazione progetto individuale con boolean!
+recap 50 RAFFA
 richieste che del progetto:
 1) aggiungere header e footer con Vuejs creando una struttura dati che consenta di inserire i link nelle nnavbar. Su questo non ci sono API da interrogarem ma create i dati a mano nel vostro js.
 
@@ -37,4 +38,7 @@ c'è un bottone nel footer in basso a sinistra che indica una freccia in su, cre
 
 # SVOLGIMENTO PROGETTO
 1) creo una struttura html di base per darmi un'idea di come impostare il progetto e successivamente creare un'istanza vue dove poter inserire tutti i miei dati.
+########------HEADER------#########
 a) sto strutturando la navabar  per iniziare a dare una forma al progetto. Ho già creato un array per le immagini delle lingue che al click cambieranno bandiera.
+b)nella parte della selezione della lingua ho usato v-bind del valore dell'oggetto che ho creato insieme ad un contatore che cambierà a senconda del valore bindato delle option e così sono riuscito,al change della lingua, a cambiare la bandiera
+c) ho creato un array con le classi delle icone fontawsome per il box icone del banner e con un v-for le ho fatte iterare con :class 

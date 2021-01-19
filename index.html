@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Max Coach clone</title>
 </head>
 <body>
     <div id="app">
@@ -13,7 +13,7 @@
         <header id="header_container" class="header_container">
             <div class="navbar_container d_flex">
                 <div class="logo">
-                    <img src="./assets/img/dark-logo.png" alt="page logo">
+                    <a href=""><img src="./assets/img/dark-logo.png" alt="page logo"></a>
                 </div>
                 <nav class="navbar">
                     <ul class="navbar_opt d_flex quit_dot capitalize_text">
@@ -42,8 +42,20 @@
                     </ul>
                 </div>
             </div>
-            <div class="banner">
-
+            <div class="banner d_flex">
+                <img alt="" :src="dudeBanner">
+                <div class="banner_presentation">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, libero?</p>
+                    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing.</h1>
+                    <p><small>Lorem ipsum dolor sit amet co
+                    <button class="capitalize_text">get started today</button>
+                </div>
+                
+               <div class="icons_banner">
+                <ul>
+                    <li v-for="icon in iconsBanner" class="quit_dot"><i :class="icon"></i></li>
+                </ul>
+               </div>
             </div>    
         </header>
         <!-- /header -->

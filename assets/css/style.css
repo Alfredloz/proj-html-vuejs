@@ -25,7 +25,37 @@
     align-items: center;
     background-color: khaki;
 }
-.logo img {
+.logo a img {
     transform: scale(0.4);
 }
+/* banner */
+.banner{
+    background-color: #eceeef;
+    background-image: url('../img/home-business-hero-global-image.png');
+    background-position-x: 80%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 35rem;
+    position: relative;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+.banner img {
+    height: 33rem;
+    align-self: flex-end;
+}
+.icons_banner{
+    position: absolute;
+    border: 1px solid black;
+    width: 2.5rem;
+    right: 0;
+    top: 5rem;
+    border-radius: 4px;
+}
+.icons_banner li {
+text-align: center;
+ padding: 1rem 0;   
+}
+/* /banner */
 /* /header */
