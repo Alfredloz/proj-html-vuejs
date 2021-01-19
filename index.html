@@ -9,20 +9,44 @@
 </head>
 <body>
     <div id="app">
-        <header>
-            <div class="logo">
-
-            </div>
-            <nav class="navbar">
-
-            </nav>
-            <div class="lang_search">
-
+        <!-- header -->
+        <header id="header_container" class="header_container">
+            <div class="navbar_container d_flex">
+                <div class="logo">
+                    <img src="./assets/img/dark-logo.png" alt="page logo">
+                </div>
+                <nav class="navbar">
+                    <ul class="navbar_opt d_flex quit_dot capitalize_text">
+                        <li>home<i class="fas fa-chevron-down"></i></li>
+                        <li>pages<i class="fas fa-chevron-down"></i></li>
+                        <li>courses<i class="fas fa-chevron-down"></i></li>
+                        <li>features<i class="fas fa-chevron-down"></i></li>
+                        <li>blog<i class="fas fa-chevron-down"></i></li>
+                        <li>shop<i class="fas fa-chevron-down"></i></li>
+                    </ul>
+                </nav>
+                <div class="lang_search">
+                    <ul class="d_flex quit_dot">
+                        <li>
+                            <img :src="flagsLang[counter]" alt=""> 
+                            <select name="languages" id="languages" class="uppcase_text" v-model="counter">
+                                <option value="" v-for="language in languages" v-bind:value="language.value">{{language.text}}</option>
+                            </select>
+                        </li>
+                        <li><i class="far fa-user-circle"></i></li>
+                        <li>
+                            <div class="search_box">
+                                <input type="text"><i class="fas fa-search"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="banner">
 
             </div>    
         </header>
+        <!-- /header -->
         <main>
             <section  class="explain_business"></section>
             <section  class="services"></section>

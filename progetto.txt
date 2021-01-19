@@ -13,7 +13,7 @@ Non ci saranno i ticket ma finestre individuali di 10 minuti al giorno. Massimo 
 #Presentazione progetto
 Venerdì 22 ci sarà un 1to1 con l'insegnante per la spiegazione del progetto. Prenotare uno slot per parlare con con il teacher. NON FEEDBACK!!!!!
 ####################################################
-domande per fabio martedì mattina:
+'domande per fabio martedì mattina':
 1) i dot nelle carda devono funzionare, se si devo implementare altre sezioni guardando dal sito o me le devo fare da solo?
 riposte: posso inserirlo come 'bonus' senza creare nessuna cartella bonus (bonus)
 2) fare embed del video youtube
@@ -37,3 +37,4 @@ c'è un bottone nel footer in basso a sinistra che indica una freccia in su, cre
 
 # SVOLGIMENTO PROGETTO
 1) creo una struttura html di base per darmi un'idea di come impostare il progetto e successivamente creare un'istanza vue dove poter inserire tutti i miei dati.
+a) sto strutturando la navabar  per iniziare a dare una forma al progetto. Ho già creato un array per le immagini delle lingue che al click cambieranno bandiera.
