@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
 }
 /* /general settings */
 /* utility classes */
@@ -18,21 +19,70 @@
 .uppcase_text{
     text-transform: uppercase;
 }
+.meadow_color{
+    color: #1eae96;
+}
+.meadow_bg_color{
+    background-color: #1eae96;
+}
 /* /utility classes */
 /* header */
 .navbar_container{
     justify-content: space-between;
     align-items: center;
-    background-color: khaki;
+    /* background-color: khaki; */
 }
 .logo a img {
     transform: scale(0.4);
 }
+.navbar_opt li {
+    padding: 1rem;
+    font-size: 0.8rem;
+}
+.navbar_opt li i {
+    font-size: 0.6rem;
+    padding: 0.5rem;
+}
+/* language opt */
+.lang_search ul{
+    align-items: center;
+}
+.lang_search ul li:first-child img{
+    transform: scale(0.8);
+}
+.lang_search ul li {
+    padding: 0 0.3rem;
+}
+.lang_search ul li select{
+    border: none;
+}
+.lang_search ul li select:focus{
+    outline: none;
+}
+.lang_search ul li:nth-child(3){
+    margin-right: 0.5rem;
+}
+/* /language opt */
+/* search box */
+.lang_search ul li:last-child{
+    border-left: 1px solid rgb(187, 187, 187);
+    height: 50px;
+}
+.search_box{
+    margin-top: 1rem;
+}
+.search_box input{
+    border: none;
+}
+.search_box input:focus{
+    outline: none;
+}
+/* /search box */
 /* banner */
 .banner{
     background-color: #eceeef;
     background-image: url('../img/home-business-hero-global-image.png');
-    background-position-x: 80%;
+    background-position-x: 90%;
     background-size: contain;
     background-repeat: no-repeat;
     width: 100vw;
@@ -44,18 +94,61 @@
 .banner img {
     height: 33rem;
     align-self: flex-end;
+    margin-right: 10rem;
+}
+.banner_presentation{
+    margin-left: 10rem;
+    width: 30rem;
+    height: auto;
+    align-self: center;
+}
+.banner_presentation p:first-child{
+    font-size: 1.4rem;
+    padding-bottom: 0.5rem;
+}
+.banner_presentation h1{
+    font-size: 3rem;
+    width: 90%;
+}
+.banner_presentation p:nth-child(3){
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    width: 80%;
+    
+}
+
+.banner_button button{
+    border-radius: 5px;
+    width: 12rem;
+    height: 3rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.banner_button button:focus{
+    outline: none;
+}
+.banner_button button:hover{
+    background-color: #343142;
+}
+.banner_button button:active{
+    position: relative;
+    top: 1px;
 }
 .icons_banner{
     position: absolute;
-    border: 1px solid black;
+    background-color: white;
+    box-shadow: -3px 0px 23px -4px rgba(0,0,0,0.55);
     width: 2.5rem;
     right: 0;
     top: 5rem;
     border-radius: 4px;
 }
 .icons_banner li {
-text-align: center;
- padding: 1rem 0;   
+        font-size: 1rem;
+        text-align: center;
+        padding: 0.8rem 0;   
 }
 /* /banner */
 /* /header */

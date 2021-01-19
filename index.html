@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
     <meta charset="UTF-8">
@@ -26,17 +28,17 @@
                     </ul>
                 </nav>
                 <div class="lang_search">
-                    <ul class="d_flex quit_dot">
+                    <ul class="d_flex quit_dot d_flex">
+                        <li><img :src="flagsLang[counter]" alt=""></li>
                         <li>
-                            <img :src="flagsLang[counter]" alt=""> 
                             <select name="languages" id="languages" class="uppcase_text" v-model="counter">
                                 <option value="" v-for="language in languages" v-bind:value="language.value">{{language.text}}</option>
                             </select>
                         </li>
                         <li><i class="far fa-user-circle"></i></li>
                         <li>
-                            <div class="search_box">
-                                <input type="text"><i class="fas fa-search"></i>
+                            <div class="search_box d_flex">
+                                <input type="text" placeholder="Search..."><i class="fas fa-search"></i>
                             </div>
                         </li>
                     </ul>
@@ -45,10 +47,12 @@
             <div class="banner d_flex">
                 <img alt="" :src="dudeBanner">
                 <div class="banner_presentation">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, libero?</p>
-                    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing.</h1>
-                    <p><small>Lorem ipsum dolor sit amet co
-                    <button class="capitalize_text">get started today</button>
+                    <p class="meadow_color capitalize_text">new challenges, new skills.</p>
+                    <h1 class="uppcase_text">build your own life coaching business</h1>
+                    <p><small>Whole-Life Business Coaching for committed enterpreneurs</small></p>
+                    <div class="banner_button">
+                        <button class="capitalize_text meadow_bg_color">get started today</button>
+                    </div>
                 </div>
                 
                <div class="icons_banner">
