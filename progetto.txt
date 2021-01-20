@@ -42,3 +42,9 @@ c'è un bottone nel footer in basso a sinistra che indica una freccia in su, cre
 a) sto strutturando la navabar  per iniziare a dare una forma al progetto. Ho già creato un array per le immagini delle lingue che al click cambieranno bandiera.
 b)nella parte della selezione della lingua ho usato v-bind del valore dell'oggetto che ho creato insieme ad un contatore che cambierà a senconda del valore bindato delle option e così sono riuscito,al change della lingua, a cambiare la bandiera
 c) ho creato un array con le classi delle icone fontawsome per il box icone del banner e con un v-for le ho fatte iterare con :class 
+d)sistemando il box che contiene il titolo del banner, p ed il bottone mi sono accorto che successivamente ci sono bottoni simili ai quali potrei nel refactoring assegnare una classe a tutti così da non ripetere lo stesso codice più volte.
+#   IMPORTANTE
+e) il box di icone nel banner potrebbe avere posizioen fixed visto che a primo occhio dallo screenshot sono strumenti di navigazione utili all'utente.
+########------Main------#########
+a) sto usando sempre flexbox per sistemare la parte visiva dei contenuti della main
+

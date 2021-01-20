@@ -15,7 +15,7 @@
         <header id="header_container" class="header_container">
             <div class="navbar_container d_flex">
                 <div class="logo">
-                    <a href=""><img src="./assets/img/dark-logo.png" alt="page logo"></a>
+                    <a href=""><img :src="logoHeader" alt="page logo"></a>
                 </div>
                 <nav class="navbar">
                     <ul class="navbar_opt d_flex quit_dot capitalize_text">
@@ -64,8 +64,91 @@
         </header>
         <!-- /header -->
         <main>
-            <section  class="explain_business"></section>
-            <section  class="services"></section>
+            <!-- explain business section -->
+            <section  class="explain_business">
+                <p class="meadow_color capitalize_text">let's dream big together</p>
+                <p >
+                    We are pioneers of the digital approach, using leading-edge tchnology to simplify procedures and apply execytuve coaching in the new age of digitalization.
+                </p>
+                <div class="business_box d_flex">
+                    <div class="business_cards d_flex">
+                        <img src="./assets/img/mezzo_vaso.png" alt="">
+                        <div class="info_card">
+                            <h5>One to One</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui assumenda facilis 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="business_cards d_flex">
+                        <img src="./assets/img/virgolette_strane.png" alt="">
+                        <div class="info_card">
+                            <h5>Anywhere</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui assumenda facilis 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="business_cards d_flex">
+                        <img src="./assets/img/puntini_strani.png" alt="">
+                        <div class="info_card">
+                            <h5>On Time</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui assumenda facilis
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="business_box  d_flex">
+                    <div class="business_cards d_flex">
+                        <img src="./assets/img/rettangolo.png" alt="">
+                        <div class="info_card">
+                            <h5>Online Coures</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui assumenda facilis 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="business_cards d_flex">
+                        <img src="./assets/img/mezzo_cerchio.png" alt="">
+                        <div class="info_card">
+                            <h5>Consulting</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui assumenda facilis
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="business_cards d_flex">
+                        <img src="./assets/img/ingranaggio_strano.png" alt="">
+                        <div class="info_card">
+                            <h5>Self Development</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui assumenda facilis
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="button_business banner_button d_flex">
+                    <button class="capitalize_text meadow_color">learn more</button>
+                    <button class="capitalize_text meadow_bg_color">get started today</button>
+                </div>
+            </section>
+            <!-- /explain business section -->
+            <!-- services -->
+            <section  class="services">
+                <p class="meadow_color capitalize_text">let's dream big together</p>
+                <h2>Explore How can I help you</h2>
+                <div class="service_box d_flex">
+                    <div class="service_card" v-for="service in servicesArray">
+                        <img :src="service.img" alt="">
+                        <h4 class="bold_text capitalize_text">{{service.title}}</h4>
+                        <p>{{service.description}}</p>
+                        <button class="meadow_color bold_text">{{service.clickInfo}} <i :class="service.iconClass"></i></button>
+                    </div>
+                </div>
+            </section>
+            <!-- /services -->
             <section  class="courses"></section>
             <section  class="video_business"></section>
             <section  class="event_section"></section>
