@@ -21,6 +21,10 @@ riposte: posso inserirlo come 'bonus' senza creare nessuna cartella bonus (bonus
 3) al click del bottone del footer posso dirgli di andaer al div X con un ID 
 4) alla mail già inserita inserire un messagio di errore (bonus)
 5) bottoni nel banner del footer solo solo dimostrativi, magari do un effetto hoover per farli vedere
+# ###########seconda call con FAbio##################
+--background img con vue, fare il bind con style? quindi inserire i dati direttamente in un array
+--chiedere anche per i dot degli slider
+
 ####################################################
 NOTE:
 -Per quanto riguard il "bonus", per il sito ho pensato di usare esclusivamente flexbox o magari cercare qualche framework per aiutarmi nella creazione della parte Responsive. 
@@ -47,4 +51,8 @@ d)sistemando il box che contiene il titolo del banner, p ed il bottone mi sono a
 e) il box di icone nel banner potrebbe avere posizioen fixed visto che a primo occhio dallo screenshot sono strumenti di navigazione utili all'utente.
 ########------Main------#########
 a) sto usando sempre flexbox per sistemare la parte visiva dei contenuti della main
+b) sono alla seconda section(servizi). Ci sarebbe da fare andare i dot alla fine della section(credo che al click bisogni cambiare card). La mia idea è   quella di creare all'interno di serivicesArray 3 pagine, cioè tre array di oggetti che al click di ogni dot cambierà la pagina
+c) ho risolto con vuejs la prima slider della section dei servizi
 
+######TODO#########
+---manca da sistemare nelle card dei corsi hover delel card!!!!!!

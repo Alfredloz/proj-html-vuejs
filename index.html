@@ -136,21 +136,75 @@
             </section>
             <!-- /explain business section -->
             <!-- services -->
-            <section  class="services">
+            <section  class="services" >
                 <p class="meadow_color capitalize_text">let's dream big together</p>
                 <h2>Explore How can I help you</h2>
                 <div class="service_box d_flex">
-                    <div class="service_card" v-for="service in servicesArray">
+                    <div class="service_card" v-for="service in servicesArray[counterArray]">
                         <img :src="service.img" alt="">
                         <h4 class="bold_text capitalize_text">{{service.title}}</h4>
                         <p>{{service.description}}</p>
                         <button class="meadow_color bold_text">{{service.clickInfo}} <i :class="service.iconClass"></i></button>
                     </div>
                 </div>
+                <div class="service_dots d_flex">
+                    <i class="fas fa-circle" :class="index == counterArray ? 'active_dot':''" v-for="(dot, index) in servicesArray.length" @click="changePage(index)"></i>
+                </div>
             </section>
             <!-- /services -->
-            <section  class="courses"></section>
-            <section  class="video_business"></section>
+            <!-- courses -->
+            <section  class="courses">
+                <p class="meadow_color capitalize_text">let's dream big together</p>
+                <h2>Explore How can I help you</h2>
+                <div class="courses_box d_flex">
+                    <div class="course_card" v-for="(course, index) in coursesArray" :style='{backgroundImage: `url("${course.bgCard}")`}' @mouseover="hover = index" @mouseleave="hover = null">
+                        <div class="layover_course_card d_flex">
+                            <span class="meadow_color bold_text">
+                                {{course.price}}<small>{{course.cents}}</small>
+                            </span>
+                            <h5 class="white_color">{{course.title}}</h5>
+                            <div class="hover_info_card" v-if="hover == index">
+                                <p class="white_color bold_text">
+                                    <i :class="course.iconLesson"></i>
+                                    <span>{{course.lessons}} Lessons</span>
+                                    <i :class="course.icoStudents"></i>
+                                    <span>{{course.students}} Students</span>
+                                </p>
+                                <p class="white_color">{{course.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <p class="final_msg_course">
+                        <small>
+                            Take the control of their life back and starrt doing things to make their dream come true
+                        </small>
+                        <button class="bold_text">
+                            View all courses
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                        </button>
+                    </p>
+            </section>
+            <!-- /courses -->
+            <!-- video business -->
+            <section  class="video_business d_flex">
+                    <div class="video_box">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/RFxHAKXkgRM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="text_box">
+                        <h3>to Thrive inBusiness Today, You'll Need a Good Plan</h3>
+                        <ul class="video_text_list" v-for="(text, index) in videoTexts">
+                            <li @click="counterVideo = index" :class="counterVideo == index ? 'meadow_color':''" class="bold_text">
+                                <i :class="counterVideo == index ? text.arrowDown:text.arrowUp"></i>
+                                {{text.title}}
+                                <p v-if="counterVideo == index" :class="counterVideo == index ? 'white_color':''">{{text.description}}</p>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <img src="./assets/img/maxcoach-shape-07-100x100.png" alt="">
+            </section>
+            <!-- /video business -->
             <section  class="event_section"></section>
             <section  class="feedbacks"></section>
             <section  class="newsletters"></section>
