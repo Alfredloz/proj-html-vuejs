@@ -205,7 +205,37 @@
                     <img src="./assets/img/maxcoach-shape-07-100x100.png" alt="">
             </section>
             <!-- /video business -->
-            <section  class="event_section"></section>
+            <!-- event section -->
+            <section  class="event_section"  @click="counterVideo = null">
+                <div class="white_bg_color event_box">
+                    <p class="meadow_color capitalize_text bold_text">let's dream big together</p>
+                <h2 class="capitalize_text">Uncoming events</h2>
+                <div class="d_flex box_card">
+                    <div class="event_card d_flex" v-for="date in eventsDate">
+                        <div class="day_info d_flex">
+                            <span><i class="fas fa-map-marker-alt"></i>{{date.city}}</span>
+                            <span class="bold_text">{{date.typeOfEvent}}</span>
+                        </div>
+                        <div class="ticket_button d_flex">
+                            <span class="meadow_color">{{date.day}}</span>
+                            <span class="bold_text">{{date.month}}</span>
+                            <button class="meadow_bg_color bold_text white_color">get ticket</button>
+                        </div>
+                    </div>
+                </div>
+                <p class="final_msg_course">
+                    <small>
+                        Take the control of their life back and starrt doing things to make their dream come true
+                    </small>
+                    <button class="bold_text meadow_color">
+                        View all courses
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </button>
+                </p>
+                </div>
+                
+            </section>
+            <!-- /event section -->
             <section  class="feedbacks"></section>
             <section  class="newsletters"></section>
         </main>

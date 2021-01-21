@@ -174,6 +174,44 @@ let app = new Vue({
                 title: 'How can We help?3',
                 description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eaque expedita deleniti consectetur sapiente odit assumenda quo laboriosam nihil deserunt.'
             }     
+        ],
+        eventsDate:[
+            {
+                city:'Texas, US',
+                typeOfEvent: 'Storytelling Workshop',
+                day:'22',
+                month:'nov'
+            },
+            {
+                city:'Berlin, Germany',
+                typeOfEvent: 'Storytelling Workshop2',
+                day:'24',
+                month:'nov'
+            },
+            {
+                city:'Milan, Italy',
+                typeOfEvent: 'Storytelling Workshop3',
+                day:'25',
+                month:'nov'
+            },
+            {
+                city:'Madrid, Spain',
+                typeOfEvent: 'Storytelling Workshop4',
+                day:'26',
+                month:'nov'
+            },
+            {
+                city:'Paris, France',
+                typeOfEvent: 'Storytelling Workshop5',
+                day:'30',
+                month:'nov'
+            },
+            {
+                city:'New York, US',
+                typeOfEvent: 'Storytelling Workshop6',
+                day:'2',
+                month:'dec'
+            },
         ]
     },
     methods: {

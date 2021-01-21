@@ -28,6 +28,9 @@
 .meadow_bg_color{
     background-color: #1eae96;
 }
+.white_bg_color{
+    background-color: white;
+}
 .white_color{
     color: white;
 }
@@ -419,4 +422,77 @@ p.final_msg_course button i {
     left: 4rem;
 }
  /* /video courses */
+ /* event section */
+ .event_section{
+    background-color: rgb(246, 246, 246);
+
+ }
+ .event_box{
+     border-bottom-right-radius: 25rem;
+ }
+ .event_box p, .event_box h2{
+     text-align: center;
+     padding: 1rem 0;
+
+ }
+ .event_box p{
+     margin-top: 2rem;
+ }
+ .event_box h2 {
+     font-size: 2.5rem;
+ }
+ .box_card{
+     margin: auto;
+     width: 70%;
+     flex-wrap: wrap;
+ }
+ .event_card {
+     margin: 1rem;
+     width: calc(28rem - 1rem);
+     height: 10rem;
+     background-color: #eceeef;
+     justify-content: space-between;
+ }
+ .day_info span {
+    padding: 0.5rem;
+ }
+ .day_info i {
+     color: lightgray;
+     padding-right: 0.5rem;
+ }
+ .day_info {
+     padding: 1rem;
+     align-self: flex-start;
+     flex-direction: column;
+ }
+ .ticket_button{
+     flex-direction: column;
+     align-self: center;
+     margin: 2rem;
+ }
+ .ticket_button span {
+     text-align: center;
+ }
+ .ticket_button span:first-child{
+     font-size: 2rem;
+ }
+ .ticket_button span:last-child{
+     font-size: 1.2rem;
+ }
+ .ticket_button button{
+     margin: 1rem;
+     width: 7rem;
+     padding: 0.3rem;
+     border: none;
+     border-radius: 5px;
+
+ }
+ .ticket_button button:hover{
+     background-color: #343142;
+     cursor: pointer;
+ }
+ .ticket_button button:focus{
+     outline: none;
+ }
+ /* /event section */
 /* /main */
