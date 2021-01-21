@@ -32,6 +32,8 @@ let app = new Vue({
         dudeBanner: './assets/img/home-business-hero-avatar.png',
         // hover
         hover: null,
+        // counter card
+        counterCard: null,
         servicesArray:[
            page1=[
             {
@@ -212,14 +214,64 @@ let app = new Vue({
                 day:'2',
                 month:'dec'
             },
+        ],
+        feedbacks:[
+            {
+                title:'Title feedback number 1',
+                text:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eligendi similique dignissimos deserunt repellat eum ab iure obcaecati ipsum ratione modi ',
+                img:'./assets/img/testimonial-avata-01.jpg',
+                name:'Name of the person1',
+                profession: 'profession1'      
+            },
+            {
+                title:'Title feedback number 2',
+                text:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eligendi simi',
+                img:'./assets/img/testimonial-avata-02.jpg',
+                name:'Name of the person2',
+                profession: 'profession2'      
+            },
+            {
+                title:'Title feedback number 3',
+                text:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eligendi',
+                img:'./assets/img/testimonial-avata-03.jpg',
+                name:'Name of the person3',
+                profession: 'profession3'      
+            }
+        ],
+        footerListOne:[
+            'address',
+            'Indirizzo della pagina',
+            'Numero telefonico Pagina ed città',
+            'support@mail.com'
+        ],
+        footerListTwo:[
+            'fab fa-twitter',
+            'fab fa-facebook-square',
+            'fab fa-instagram',
+            'fab fa-linkedin'
+        ],
+        footerListThree:[
+            'Explore1',
+            'explore2',
+            'explore3',
+        ],
+        footerListFour:[
+            'information',
+            'Pruchase',
+            'Privacy',
+            'Terms and services'
         ]
     },
     methods: {
         changePage(index){
             this.counterArray = index;
         },
-        hoverItem(index){
-            this.hover= index;
+        changeDot(index){
+            this.counterCard= index;
+        },
+        scrollTop(){
+            window.scrollTo(0,0);
         }
-    }
+    },
+    
 });

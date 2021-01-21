@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
 }
 /* /general settings */
 /* utility classes */
@@ -433,7 +434,6 @@ p.final_msg_course button i {
  .event_box p, .event_box h2{
      text-align: center;
      padding: 1rem 0;
-
  }
  .event_box p{
      margin-top: 2rem;
@@ -454,7 +454,7 @@ p.final_msg_course button i {
      justify-content: space-between;
  }
  .day_info span {
-    padding: 0.5rem;
+    padding: 0.3rem;
  }
  .day_info i {
      color: lightgray;
@@ -494,5 +494,168 @@ p.final_msg_course button i {
  .ticket_button button:focus{
      outline: none;
  }
- /* /event section */
+ .ticket_button button:active{
+     position: relative;
+     top: 1px;
+ }
+  /* /event section */
+ /* feedbacks */
+ .feedbacks{
+    background-color: rgb(246, 246, 246);  
+ }
+ .feedbacks p, .feedbacks h2{
+     text-align: center;
+     padding: 1rem 0;
+
+ }
+ .feedbacks p:first-child{
+     text-align: center;
+ }
+ .feedbacks p{
+    padding-top: 2rem;
+    text-align: left;
+}
+.feedbacks h2 {
+    font-size: 2.5rem;
+}
+.feedback_card{
+    flex-direction: column;
+    padding: 2rem;
+    width: 25rem;
+    height: 20rem;
+    opacity: 0.5;
+}
+.opacity{
+    opacity: 1;
+}
+.feedback_box {
+    justify-content: space-around;
+}
+.person_card {
+    height: 100%;
+    justify-content: right;
+}
+.person_card img {
+    align-self: flex-end;
+    height: 5rem;
+    border-radius: 50%;
+}
+.info{
+    align-self: flex-end;
+    padding: 1rem;
+}
+.dot_box{
+    width: 15rem;
+    margin: auto;
+}
+.dot_box i {
+    font-size: 0.7rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+ /* /feedbacks */
+.newsletters{
+    justify-content: center;
+    height: 20rem;
+}
+.newsletters h2 {
+    text-align: center;
+    font-size: 3rem;
+    padding: 2rem;
+}
+.newsletters p {
+    justify-self: center;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding: 2rem;
+}
+.email_box{
+    height: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.circle{
+    position: relative;
+}
+.circle i {
+    position: absolute;
+    font-size: 4rem;
+    color: #1eae96;
+    opacity: 0.6;
+    top: 50%;
+    left: -4rem;
+}
+/* .email_box {
+    width: 80%;
+    margin-top: 1rem;
+    margin: auto;
+} */
+.email_box{
+    margin: auto;
+    width: 40rem;
+}
+.email_box input {
+    height: 100%;
+    width: 90%;
+    background-color: #eceeef;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.email_box input:focus{
+    border: none;
+    outline: none;
+}
+.email_box button {
+    width: 6rem;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.email_box button:focus{
+    outline: none;
+}
+.email_box button:active{
+    position: relative;
+    top: 1px;
+}
+.sphere {
+    position: relative;
+}
+.sphere img:first-child {
+    top: 10%;
+    left: -3rem;
+    position: absolute;
+}
+.sphere img:last-child{
+    position: absolute;
+    top: 30%;
+    left: 0;
+    left: 1rem;
+}
+/* footer */
+footer{
+    position: relative;
+    background-color: #282935;
+}
+.box_footer {
+    justify-content: space-around;
+    height: 15rem;
+    padding-top: 2rem;
+}
+.box_footer ul{
+    list-style-type: none;
+}
+.box_footer ul li{
+    line-height: 2rem;
+}
+.button_footer {
+    position: absolute;
+    right: 0;
+    bottom: 1rem;
+    border-radius: 50%;
+    padding: 1rem;
+}
+/* /footer */
 /* /main */

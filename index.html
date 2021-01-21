@@ -209,7 +209,7 @@
             <section  class="event_section"  @click="counterVideo = null">
                 <div class="white_bg_color event_box">
                     <p class="meadow_color capitalize_text bold_text">let's dream big together</p>
-                <h2 class="capitalize_text">Uncoming events</h2>
+                <h2 class="capitalize_text">Upcoming events</h2>
                 <div class="d_flex box_card">
                     <div class="event_card d_flex" v-for="date in eventsDate">
                         <div class="day_info d_flex">
@@ -236,14 +236,73 @@
                 
             </section>
             <!-- /event section -->
-            <section  class="feedbacks"></section>
-            <section  class="newsletters"></section>
+            <section  class="feedbacks">
+                <p class="meadow_color capitalize_text bold_text">let's dream big together</p>
+                <h2 class="capitalize_text">Upcoming events</h2>
+                <div class="feedback_box d_flex">
+                    <div class="feedback_card white_bg_color d_flex" v-for="(feedback, index) in feedbacks"  :class="index == counterCard ? 'opacity':''" @click="changeDot(index)">
+                        <h4>{{feedback.title}}</h4>
+                        <p>{{feedback.text}}</p>
+                        <div class="person_card d_flex ">
+                            <img :src="feedback.img" alt="image testimonial">
+                            <div class="info">
+                                <h5>{{feedback.name}}</h5>
+                                <span><small>/{{feedback.profession}}</small></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dot_box">
+                    <i class="fas fa-circle" :class="index == counterCard ? 'active_dot':''" v-for="(dot, index) in feedbacks.length"  @click="changeDot(index)"></i>
+                </div>
+            </section>
+            <section  class="newsletters d_flex">
+                <div class="circle">
+                    <i class="far fa-circle"></i>
+                </div>
+                <div class="newsletters_box">
+                    <h2 class="capitalize_text">subscribe <span class="meadow_color">newletters</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis laboriosam dolore perferendis mollitia tempora laborum.</p>
+                    <div class="email_box d_flex">
+                        <form action="" class="email_box  d_flex">
+                            <input type="email">
+                        <button class="Capitalize_text meadow_bg_color white_color">subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="sphere">
+                    <img src="./assets/img/maxcoach-shape-09.png" alt="">
+                    <img src="./assets/img/maxcoach-shape-02.png" alt="">
+
+                </div>
+            </section>
         </main>
         <footer>
-            <ul class="adress_list"></ul>
-            <ul class="explore_list"></ul>
-            <ul class="information_list"></ul>
-            <h4 class="copyright"></h4>
+            <div class="box_footer d_flex white_color bold">
+                <div class="box_list">
+                    <h4 class="bold_text">Address</h4>
+                    <ul class="adress_list" v-for="item in footerListOne">
+                        <li>{{item}}</li>
+                        
+                    </ul>
+                    <span v-for="item in footerListTwo"><i :class="`${item}`"></i></span>
+                </div>
+                
+                <div class="box_list">
+                    <h4 class="bold_text">Address</h4>
+
+                    <ul class="information_list" v-for="item in footerListThree">
+                        <li>{{item}}</li>
+                    </ul>
+                </div>
+                <div class="box_list">
+                    <ul class="copyright" v-for="item in footerListFour">
+                        <li>{{item}}</li>
+                    </ul>
+                </div> 
+                            
+            </div>
+            <button @click="scrollTop()" class="button_footer meadow_bg_color white_color"><i class="fas fa-long-arrow-alt-up"></i></button>
         </footer>
     </div>
     <!-- vue & js -->
